@@ -1,18 +1,13 @@
-import Menu from '/Menu.svg'
+import aMenu from '/Menu.svg'
 import xMenu from '/Xmenu.svg'
 import Instagram from '/Insta.svg'
 import Facebook from '/Facebook.svg'
 
-export default function Navbar(){
+export default function Menu(props){
     return(
-        <>
-        <nav>
-                <img src={Menu}></img>
-                <h2 className="logo">Exotic Ice</h2>
-            </nav>
-            <div className='div-menu'>
+        <div className='div-menu'>
                 <div className='div-top'>
-                    <img src={xMenu}></img>
+                    <img src={xMenu} onClick={props.clicked}></img>
                     <h2 className="logo">Exotic Ice</h2> 
                 </div>
                 <div className='container'>
@@ -36,6 +31,5 @@ export default function Navbar(){
                     </div>
                 </div>
             </div>
-        </>
     )
 }
