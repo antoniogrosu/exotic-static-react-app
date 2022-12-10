@@ -143,6 +143,7 @@ footer{
     margin-top: 50px;
 }
 .hero-div{
+    padding: 0px 30px;
     width: 100%;
     margin: 0;
     background: url('/Hero Image.png');
