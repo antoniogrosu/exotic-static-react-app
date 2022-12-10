@@ -3,6 +3,8 @@ import './App.css'
 import aMenu from '/Menu.svg'
 import Menu from './Menu'
 import Footer from './Footer'
+import Hero from './Hero'
+import Collage from './Collage'
 
 function App() {
 
@@ -14,11 +16,13 @@ function App() {
   return (
     <div className="app">
       { navbar && <nav>
-          <img src={aMenu} onClick={toggleNavbar}></img>
           <h2 className="logo">Exotic Ice</h2>
+          <img src={aMenu} onClick={toggleNavbar}></img>
       </nav>}
       { navbar == false && <Menu  clicked={toggleNavbar}/>}
-      <Footer />
+      <Hero />
+      <Collage />
+      <Footer/>
     </div>
   )
 }

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Rubik+Microbe&family=Source+Sans+Pro:wght@400;600&display=swap');
+@import "animate.css/animate.min.css";
 :root{
     --dark:#0A0908;
     --light:#F8F9FA;
@@ -13,14 +14,26 @@
     padding: 0;
     margin: 0;
 }
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+}
+  /* Hide scrollbar for IE, Edge and Firefox */
+body{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
 nav{
-    height: 120px;
+    z-index: 10;
+    width: 100%;
+    height: 100px;
     padding: 0px 100px;
     background-color: var(--dark);
-    display: grid;
+    display: flex;
     align-items: center;
-    grid-template-columns: 0.75fr 1fr;
-    z-index: 1;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
 }
 nav img{
     cursor: pointer;
@@ -31,14 +44,16 @@ nav img{
     padding: 0px 100px;
     background-color: var(--dark);
     z-index: 1;
+    position: fixed;
+    top: 0;
 }
 .div-top{
     margin-bottom: 100px;
     width: 100%;
-    height: 120px;
-    display: grid;
+    height: 100px;
+    display: flex;
     align-items: center;
-    grid-template-columns: 0.75fr 1fr;
+    justify-content: space-between;
 }
 .div-top img{
     cursor: pointer;
@@ -87,6 +102,7 @@ input:focus{
     border: 4px var(--light) solid;
     padding: 10px 40px;
     background-color: transparent;
+    cursor: pointer;
 }
 .container{
     display: grid;
@@ -97,12 +113,8 @@ footer{
     width: 100%;
     height: 400px;
     background-color: var(--dark);
-    margin-top: 180px ;
     display: flex;
     align-items: center;
-    position: fixed;
-    bottom: 0;
-    z-index: -1;
 }
 .flex{
     width: 40%;
@@ -129,6 +141,69 @@ footer{
     margin: 0px auto;
     margin-top: 50px;
 }
+.hero-div{
+    width: 100%;
+    margin: 0;
+    background: url('/Hero Image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.div-adjust{
+    margin-top: 25%;
+}
+.heading{
+    font-family: 'Poppins';
+    font-size: 3rem;
+}
+.white{
+    color: var(--light);
+}
+.center{
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+.hero-cta{
+    padding: 20px 40px;
+    font-family: 'Source Sans pro';
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--light);
+    margin-top: 50px;
+    background-color: transparent;
+    border: 4px var(--light) solid;
+    cursor: pointer;
+}
+.button-div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.div-collage{
+    padding: 180px 100px;
+    background-color: var(--light);
+}
+.black{
+    color: var(--dark);
+    font-weight: 400;
+}
+.img-flex{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.imgw{
+    margin-top: 90px;
+    width: 60%;
+    aspect-ratio: 16/9;
+    background: url('/widthImage.png');
+    background-size: cover;
+}
+
 @media only screen and (max-width:600px){
     nav{
         padding: 0px 30px;
@@ -198,5 +273,29 @@ footer{
     }
     .copyright{
         margin-top: 40px;
+    }
+    .hero-div{
+        height: 70vh;
+        background: url('/Mobile Hero.png');
+        background-size:cover;
+        background-repeat: no-repeat;
+    }
+    .div-adjust{
+        margin-top: 85%;
+    }
+    .heading{
+        font-size: 2rem;
+    }
+    .hero-cta{
+        margin-top: 20px;
+        border: 1.5px var(--light) solid;
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+    .div-collage{
+        padding: 100px 30px;
+    }
+    .imgw{
+        margin-top: 30px ;
     }
 }

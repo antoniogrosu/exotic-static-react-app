@@ -3,12 +3,14 @@ import xMenu from '/Xmenu.svg'
 import Instagram from '/Insta.svg'
 import Facebook from '/Facebook.svg'
 
+
 export default function Menu(props){
     return(
+    
         <div className='div-menu'>
                 <div className='div-top'>
-                    <img src={xMenu} onClick={props.clicked}></img>
                     <h2 className="logo">Exotic Ice</h2> 
+                    <img src={xMenu} onClick={props.clicked}></img>
                 </div>
                 <div className='container'>
                     <div className="div-links">
