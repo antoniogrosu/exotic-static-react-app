@@ -4,9 +4,9 @@ import Instagram from '/Insta.svg'
 import Facebook from '/Facebook.svg'
 
 
+
 export default function Menu(props){
     return(
-    
         <div className='div-menu'>
                 <div className='div-top'>
                     <h2 className="logo">Exotic Ice</h2> 

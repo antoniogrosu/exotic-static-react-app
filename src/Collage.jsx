@@ -8,6 +8,13 @@ export default function Collage(){
                         <div className='imgw'>
                         </div>
             </AnimationOnScroll>
+            <AnimationOnScroll animateIn='animate__fadeIn'>
+                <div className="img-flex3">
+                    <div className='imgh'></div>
+                    <div className='imgh'></div>
+                    <div className='imgh'></div>
+                </div>
+            </AnimationOnScroll>
             <AnimationOnScroll animateIn='animate__fadeIn'>   
                     <div className='imgw'>
                     </div>
