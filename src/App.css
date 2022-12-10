@@ -158,7 +158,8 @@ footer{
 .heading{
     font-family: 'Poppins';
     font-size: 3rem;
-    letter-spacing: normal;
+    letter-spacing:0px;
+    font-weight: 400;
 }
 .white{
     color: var(--light);
