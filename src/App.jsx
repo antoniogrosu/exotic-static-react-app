@@ -5,6 +5,7 @@ import Menu from './Menu'
 import Footer from './Footer'
 import Hero from './Hero'
 import Collage from './Collage'
+import Questions from './Questions'
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
       { navbar == false && <Menu  clicked={toggleNavbar}/>}
       <Hero />
       <Collage />
+      <Questions />
       <Footer/>
     </div>
   )
