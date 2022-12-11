@@ -6,6 +6,7 @@ import Footer from './Footer'
 import Hero from './Hero'
 import Collage from './Collage'
 import Questions from './Questions'
+import Product from './Product'
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
       <Hero />
       <Collage />
       <Questions />
+      <Product />
       <Footer/>
     </div>
   )

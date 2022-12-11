@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Rubik+Microbe&family=Source+Sans+Pro:wght@400;600&display=swap');
 @import "animate.css/animate.min.css";
+
 :root{
     --dark:#0A0908;
     --light:#F8F9FA;
@@ -217,7 +218,7 @@ footer{
 }
 .questions-div{
     padding: 90px 100px 180px 100px ;
-    background-color: #F8F9FA;
+    background-color: var(--light);
 }
 .question{
     margin-top: 90px;
@@ -246,6 +247,65 @@ footer{
     100%{
         opacity: 1;
     }
+}
+.smaller{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.product-div{
+    background-color: var(--light);
+    padding: 180px 100px;
+    background-color: var(--light);
+}
+.product-flex{
+    margin-top: 90px;
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+}
+.product-img{
+    width: 50%;
+    height: 65%;
+}
+.product-img img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.cta-div{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.shop-now{
+    background-color: var(--dark);
+    width: 240px;
+    height: 60px;
+    margin-left: 30px;
+    padding: 15px 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.price{
+    font-family: 'Source Sans Pro';
+    font-size: 2rem;
+    font-weight: 600;
+}
+.white{
+    margin: 0;
+}
+.product-description{
+    margin-top: 50px;
+}
+.learn{
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.lileft{
+    margin-left: 50px;
 }
 @media only screen and (max-width:1000px){
     nav{
@@ -363,6 +423,36 @@ footer{
     .text{
         margin-top: 10px;
         font-size: 1rem;
-
+    }
+    .product-div{
+        padding: 100px 30px;
+        overflow: hidden;
+    }
+    .product-flex{
+        margin-top: 15px;
+        flex-direction: column;
+    }
+    .smaller{
+        font-size: 1.5rem;
+    }
+    .product-img{
+        width: 100%;
+        height: 80%;
+        margin-bottom: 20px;
+    }
+    .shop-now{
+        width: 180px;
+        height: 40px;
+        padding: 10px 45px;
+        margin-left: 10px;
+    }
+    .white{
+        margin: 0;
+    }
+    .price{
+        font-size: 1.5rem;
+    }
+    .product-description{
+        margin-top: 30px;
     }
 }
