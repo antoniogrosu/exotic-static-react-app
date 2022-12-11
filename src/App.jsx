@@ -24,8 +24,8 @@ function App() {
       { navbar == false && <Menu  clicked={toggleNavbar}/>}
       <Hero />
       <Collage />
-      <Questions />
       <Product />
+      <Questions />
       <Footer/>
     </div>
   )
