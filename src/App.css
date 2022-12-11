@@ -319,7 +319,7 @@ footer{
     }
     .hero-div{
         height: 80vh;
-        background: url('/Mobile Hero.svg');
+        background: url('/Mobile Hero.png');
         background-size:cover;
         background-repeat: no-repeat;
     }
